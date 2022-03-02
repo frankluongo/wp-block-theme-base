@@ -1,0 +1,130 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "full-black",
+          "color": "#000000",
+          "name": "Black"
+        },
+        {
+          "slug": "gray",
+          "color": "#979088",
+          "name": "Grey"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "artichoke",
+          "color": "#888977",
+          "name": "Artichoke"
+        },
+        {
+          "slug": "bone",
+          "color": "#d5cebe",
+          "name": "Bone"
+        },
+        {
+          "slug": "isabelline",
+          "color": "#faf7f5",
+          "name": "Isabelline"
+        },
+        {
+          "slug": "shadow",
+          "color": "#87785b",
+          "name": "Shadow"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1440px"
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,Oxygen-Sans,Ubuntu,Cantarell, \"Helvetica Neue\",sans-serif",
+          "slug": "system-font",
+          "name": "System Font"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Microscopic",
+          "size": "10px",
+          "slug": "xxs"
+        },
+        {
+          "name": "XS",
+          "size": "12px",
+          "slug": "xs"
+        },
+        {
+          "name": "Small",
+          "size": "14px",
+          "slug": "small"
+        },
+        {
+          "name": "Default",
+          "size": "16px",
+          "slug": "default"
+        },
+        {
+          "name": "Big",
+          "size": "20px",
+          "slug": "big"
+        },
+        {
+          "name": "Large",
+          "size": "24px",
+          "slug": "large"
+        },
+        {
+          "name": "XL",
+          "size": "32px",
+          "slug": "xl"
+        },
+        {
+          "name": "XXL",
+          "size": "40px",
+          "slug": "xxl"
+        },
+        {
+          "name": "XXXL",
+          "size": "48px",
+          "slug": "xxxl"
+        },
+        {
+          "name": "XXXXL",
+          "size": "56px",
+          "slug": "xxxxl"
+        },
+        {
+          "name": "XXXXXL",
+          "size": "64px",
+          "slug": "xxxxxl"
+        },
+        {
+          "name": "Yuge",
+          "size": "72px",
+          "slug": "yuge"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "text": "#000000"
+    },
+    "typography": {
+      "fontFamily": "Helvetica"
+    }
+  }
+}

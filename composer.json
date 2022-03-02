@@ -1,0 +1,6 @@
+{
+    "require-dev": {
+        "paulthewalton/acf-stubs": "^5.8",
+        "paulthewalton/acf-pro-stubs": "5.8.9.1"
+    }
+}
