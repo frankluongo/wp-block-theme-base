@@ -1,0 +1,17 @@
+$displays: (block, inline, inline-block, flex, grid, none);
+
+@each $display in $displays {
+  .d#{$display} {
+    display: $display;
+  }
+}
+
+@each $point, $value in $breakpoints {
+  @include media($value) {
+    @each $display in $displays {
+      .#{$point}\:d#{$display} {
+        display: $display;
+      }
+    }
+  }
+}

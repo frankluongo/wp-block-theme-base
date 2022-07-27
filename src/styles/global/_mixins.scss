@@ -1,0 +1,71 @@
+@mixin media($breakpoint, $value: min-width) {
+  @media (#{$value}: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin spacing-block($type, $amount) {
+  #{$type}-bottom: $amount;
+  #{$type}-block-end: $amount;
+  #{$type}-top: $amount;
+  #{$type}-block-start: $amount;
+}
+
+@mixin spacing-bottom($type, $amount) {
+  #{$type}-bottom: $amount;
+  #{$type}-block-end: $amount;
+}
+
+@mixin spacing-inline($type, $amount) {
+  #{$type}-left: $amount;
+  #{$type}-inline-start: $amount;
+  #{$type}-right: $amount;
+  #{$type}-inline-end: $amount;
+}
+
+@mixin spacing-left($type, $amount) {
+  #{$type}-left: $amount;
+  #{$type}-inline-start: $amount;
+}
+
+@mixin spacing-right($type, $amount) {
+  #{$type}-right: $amount;
+  #{$type}-inline-end: $amount;
+}
+
+@mixin spacing-top($type, $amount) {
+  #{$type}-top: $amount;
+  #{$type}-block-start: $amount;
+}
+
+@mixin state-disabled {
+  &[disabled],
+  &[aria-disabled="true"] {
+    @content;
+  }
+}
+
+@mixin state-invalid {
+  &[data-invalid],
+  &[aria-invalid="true"] {
+    @content;
+  }
+}
+
+@mixin state-success {
+  &[data-success] {
+    @content;
+  }
+}
+
+@mixin state-valid {
+  &[data-valid] {
+    @content;
+  }
+}
+
+@mixin state-warning {
+  &[data-warning] {
+    @content;
+  }
+}
