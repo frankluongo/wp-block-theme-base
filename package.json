@@ -7,7 +7,8 @@
     "init": "chmod u+x deploy.sh",
     "dev": "webpack --watch --mode=development --config .config/webpack.config.js",
     "build": "webpack --mode=production --config .config/webpack.config.js",
-    "deploy": "npm run build && ./deploy.sh"
+    "deploy": "npm run build && ./deploy.sh",
+    "release": "release-it"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "dotenv": "^16.0.0",
     "glob": "^7.2.0",
     "mini-css-extract-plugin": "^2.3.0",
+    "release-it": "^15.6.0",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.3.0",
