@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --mode=development",
-    "build": "webpack --mode=production"
+    "init": "chmod u+x deploy.sh",
+    "dev": "webpack --watch --mode=development --config .config/webpack.config.js",
+    "build": "webpack --mode=production --config .config/webpack.config.js",
+    "deploy": "npm run build && ./deploy.sh"
   },
   "keywords": [],
   "author": "",
@@ -28,5 +30,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.15.4"
-  }
+  },
+  "type": "module"
 }
