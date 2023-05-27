@@ -1,3 +1,4 @@
+import BrowserSyncPlugin from "browser-sync-webpack-plugin";
 import * as dotenv from "dotenv";
 dotenv.config({ src: `${root}/.env` });
 import path from "path";
@@ -55,6 +56,12 @@ function config(env) {
     plugins: [
       copyThemeFiles(`./themes/${process.env.THEME_NAME}`),
       extractCSS().plugin,
+      new BrowserSyncPlugin({
+        host: "localhost",
+        port: 3000,
+        files: ["./src/**/*"],
+        proxy: "http://127.0.0.1:8881",
+      }),
     ],
   };
 }

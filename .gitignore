@@ -3,5 +3,6 @@ node_modules
 themes
 database
 db.php
+mu-plugins
 plugins
 uploads
