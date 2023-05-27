@@ -16,7 +16,7 @@ function config(env) {
     entry,
     output: {
       filename: "[name].js",
-      path: path.resolve(process.env.DIST, "./assets"),
+      path: path.resolve(`./themes/${process.env.THEME_NAME}/assets`),
     },
     module: {
       rules: [
@@ -52,7 +52,10 @@ function config(env) {
         },
       ],
     },
-    plugins: [copyThemeFiles(process.env.DIST), extractCSS().plugin],
+    plugins: [
+      copyThemeFiles(`./themes/${process.env.THEME_NAME}`),
+      extractCSS().plugin,
+    ],
   };
 }
 

@@ -1,4 +1,3 @@
 #! /bin/bash
-cd $DIST
-cd ..
+cd ./themes
 zip $THEME_NAME.zip $THEME_NAME
